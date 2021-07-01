@@ -22,7 +22,7 @@
         <h1 class="titulosSecciones">CONTACTO</h1> 
 
         <?php
-        if ( $_GET['success'] !== true ) {
+        if ( empty( $_GET['success'] ) ) {
         ?>
 
         <form action="mensajes.php" method="post">
@@ -42,8 +42,9 @@
         } else {
             ?>
             
-            <h2>¡Gracias por escribir!</h2>
-
+            <section id="graciasForm">
+                <h2>¡Gracias por tu mensaje!</h2>
+            </section>
         <?php
         };
         ?>
