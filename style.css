@@ -39,6 +39,16 @@ html{
     src: url("../C-Munteanu-php/fonts/Dekar.otf");
   }
 
+/*Fuente para que reconozca el widget de Songkick*/
+
+section.vivo{
+    font-family: 'Roboto', 'FuturaLTCN', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 2vh 10vw;
+    padding: 2vh 10vw;
+}
+
 /*Estilos index*/
 
 h1.tituloIndex{
@@ -345,7 +355,7 @@ p#circuloSeis{
 }*/
 
 article#videoDestacado{
-    margin: 2vh;
+    margin: 2vh 0;
     padding: 2vh;
     text-align: center;
     background-color: #000000;
@@ -355,6 +365,7 @@ article.videosNoDestacados{
     margin: 2vh;
     padding: 2vh;
     text-align: center;
+    padding-bottom: 10vh;
 }
 
 iframe.otrosVideos{
@@ -379,8 +390,9 @@ article#participacionesBandcamp{
 }
 
 article#participacionesBandcamp{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 iframe.participacionesBandcamp{
@@ -470,45 +482,29 @@ h2{
 }
 
 @media (max-width: 768px){
-    body#bodyInicio{
-        background: url("../C-Munteanu-php/img/fondo_inicio_mq.jpg") no-repeat center fixed;     
-    }
-    body#bodyContacto{
-        background: url("../C-Munteanu-php/img/fondo_contacto_mq.jpg") no-repeat center fixed;     
-    }
-    body#bodyBio{
-        background: url("../C-Munteanu-php/img/fondo_bio_mq.jpg") no-repeat center fixed;     
-    }
-    body#bodyVideos{
-        background: url("../C-Munteanu-php/img/fondo_videos_mq.jpg") no-repeat center fixed;     
-    }
-    body#bodyParticipaciones{
-        background: url("../C-Munteanu-php/img/fondo_participaciones_mq.jpg") no-repeat center fixed;     
-    }
-    body#bodyVivo{
-        background: url("../C-Munteanu-php/img/fondo_vivo_mq.jpg") no-repeat center fixed;     
-    }
-    body#bodyMusica{
-        background: url("../C-Munteanu-php/img/fondo_musica_mq.jpg") no-repeat center fixed;     
-    }
+
     article#textoBioUno{
         position: static;
         width: 100%;
         padding: 1em;
         padding-bottom: 0;
+        background-color: rgba(0,0,0,0.50);
     }
     
     article#textoBioDos{
         position: static;
         width: 100%;
         padding: 1em;
+        padding-top: 0;
         padding-bottom: 10vh;
+        background-color: rgba(0,0,0,0.50);
     }
     
     p#circuloUno{
         width: 100%;
         margin: 0;
         padding: 0.25em;
+        padding-bottom: 1em;
         text-align: center;
     }
     
@@ -516,6 +512,7 @@ h2{
         width: 100%;
         margin: 0;
         padding: 0.25em;
+        padding-bottom: 1em;
         text-align: center;
     }
     
@@ -523,6 +520,7 @@ h2{
         width: 100%;
         margin: 0;
         padding: 0.25em;
+        padding-bottom: 1em;
         text-align: center;
     }
     
@@ -530,6 +528,7 @@ h2{
         width: 100%;
         margin: 0;
         padding: 0.25em;
+        padding-bottom: 1em;
         text-align: center;
     }
     
@@ -537,6 +536,7 @@ h2{
         width: 100%;
         margin: 0;
         padding: 0.25em;
+        padding-bottom: 1em;
         text-align: center;
     }
     
@@ -544,6 +544,7 @@ h2{
         width: 100%;
         margin: 0;
         padding: 0.25em;
+        padding-bottom: 1em;
         text-align: center;
     }
     
@@ -635,20 +636,21 @@ h2{
     }
 
     article#videoDestacado{
-        width: 100vw;
+        width: 97vw;
         height: auto;
         margin: auto;
+        padding: 0;
         text-align: center;
         background-color: #000000;
     }
 
     iframe.videoDestacado{
-        width: 80vw;
+        width: 90vw;
         height: 70vh;
     }
 
     article.videosNoDestacados{
-        width: 100vw;
+        width: 95vw;
         height: auto;
         margin: auto;
         padding: 0;
@@ -666,15 +668,18 @@ h2{
 
     #participacionesEnDiscos{
         flex-direction: column;
+        padding-bottom: 5vh;
     }
     
     article#participacionesBandcamp{
-        margin: 2vh;
-        padding: 2vh;
+        margin: 2vh 0;
+        padding: 2vh 0;
     }
     
     article#participacionesBandcamp{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     iframe.participacionesBandcamp{
@@ -685,5 +690,36 @@ h2{
 
     form{
         width: 100%;
+    }
+
+    section.vivo{
+        margin: 0;
+        padding: 0;
+    }
+
+    a.linkDisco{
+        font-size: 1px;
+    }
+}
+
+@media (max-width: 480px){
+    article#videoDestacado{
+        width: 100vw;
+    }
+
+    iframe.videoDestacado{
+        width: 100vw;
+    }
+
+    article.videosNoDestacados{
+        width: 95vw;
+    }
+
+    iframe.otrosVideos{
+        margin: 0;
+        margin-top: 10vh;
+        padding: 0;
+        width: 80vw;
+        height: 70vh;
     }
 }

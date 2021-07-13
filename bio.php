@@ -30,7 +30,7 @@
 
             <p id="circuloUnoYMedio">
                 Se presenta en un set solista que incluye voz,
-                guitarra, sintetizador y máquina de ritmo, que conecta en tiempo real a través de la técnica
+                guitarra, sintetizador y máquina de ritmo, conectados en tiempo real a través de la técnica
                 de live looping (loop en vivo).
             </p>
 

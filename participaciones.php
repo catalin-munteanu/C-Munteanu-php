@@ -24,7 +24,7 @@
 
             <article class="cadaDisco">
                 <figure class="elementoDiscoTapa">
-                    <a href="https://open.spotify.com/album/2OHSWVVWZayCYkGuIms6uL">
+                    <a class="linkDisco" href="https://open.spotify.com/album/2OHSWVVWZayCYkGuIms6uL">
                         <img class="tapaDisco" src="../C-Munteanu-php/img/los_incendios_forestales.jpg" width="300" height="300"
                         alt="Los incendios forestales">
                     </a>
@@ -37,7 +37,7 @@
 
             <article class="cadaDisco">
                 <figure class="elementoDiscoTapa">
-                    <a href="https://open.spotify.com/album/05qTM0VRUdTV8Bw3yMj8K6?si=EpePyRBFRY-B5eJHpM66jA">
+                    <a class="linkDisco" href="https://open.spotify.com/album/05qTM0VRUdTV8Bw3yMj8K6?si=EpePyRBFRY-B5eJHpM66jA">
                         <img class="tapaDisco" src="../C-Munteanu-php/img/fuega_camina_conmigo.jpg" width="300" height="300"
                             alt="Fuega camina conmigo">
                     </a>

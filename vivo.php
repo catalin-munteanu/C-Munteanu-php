@@ -20,10 +20,10 @@
 
     <main>
         <section class=vivo>
-            <a href="https://www.songkick.com/artists/9091409" class="songkick-widget" data-theme="dark"
-                data-other-artists="on" data-track-button="on" data-detect-style="true" data-font-color="#ffffff"
-                data-background-color="transparent" data-locale="en">Catalín Munteanu tour dates</a>
-            <script class="songkick-widget" src="//widget.songkick.com/9091409/widget.js"></script>
+            <article id="songkick-w">
+                <a href="https://www.songkick.com/artists/9091409" class="songkick-widget" data-theme="dark" data-other-artists="on" data-track-button="on" data-detect-style="true" data-font-color="#FFFFFF" data-locale="es">Catalín Munteanu en vivo</a>
+                <script src="//widget.songkick.com/9091409/widget.js"></script>
+            </article>
         </section>
     </main>
 
