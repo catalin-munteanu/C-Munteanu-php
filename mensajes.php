@@ -1,8 +1,5 @@
 <?php
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
 // primero defino las variables y les paso un valor por default (puede ser vacío o no)
 
 $nombre  = '';
