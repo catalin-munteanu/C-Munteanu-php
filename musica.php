@@ -20,27 +20,39 @@
 
     <h1 class=titulosSecciones>MÚSICA</h1>
 
-    <section class="discos">
+    <section id="discosCatalin">
+        <article id="lanzamientoDestacado">
+        <figure class="elementoDiscoTapa opacidadElementos">
+                <a class="linkDisco" href="https://open.spotify.com/embed/album/4jYva9PDnECQQnJuMywXG2" target="_blank">
+                    <img class="tapaDisco" src='img/al_sur.jpg' width="300" height="300"
+                    alt="Al sur">
+                </a>
+            </figure>
+            <figure class="elementoDiscoSpotify opacidadElementos">
+                <iframe src="https://open.spotify.com/embed/album/4jYva9PDnECQQnJuMywXG2" width="250" height="300"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </figure>
+        </article>
         <article class="cadaDisco">
-            <figure class="elementoDiscoTapa">
+            <figure class="elementoDiscoTapa opacidadElementos">
                 <a class="linkDisco" href="https://open.spotify.com/album/31t5YnjAt782oUyU5lhTUI?si=v3O5eIj6TX-Da2jfjt8DpA" target="_blank">
-                    <img class="tapaDisco" src="../C-Munteanu-php/img/las_fuerzas_invisibles.jpg" width="300" height="300"
+                    <img class="tapaDisco" src='img/las_fuerzas_invisibles.jpg' width="300" height="300"
                     alt="Las fuerzas invisibles">
                 </a>
             </figure>
-            <figure class="elementoDiscoSpotify">
+            <figure class="elementoDiscoSpotify opacidadElementos">
                 <iframe src="https://open.spotify.com/embed/album/31t5YnjAt782oUyU5lhTUI" width="250" height="300"
                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </figure>
         </article>
         <article class="cadaDisco">
-            <figure class="elementoDiscoTapa">
+            <figure class="elementoDiscoTapa opacidadElementos">
                 <a class="linkDisco" href="https://open.spotify.com/album/1Ege2vnYYSEgKQ9zJ3YRAS?si=gus-I8iAQKS76XmOVe9wcg" target="_blank">
-                    <img class="tapaDisco" src="../C-Munteanu-php/img/la_conviccion.jpg" width="300" height="300"
+                    <img class="tapaDisco" src='img/la_conviccion.jpg' width="300" height="300"
                     alt="La convicción permanente de que las cosas siempre están un poco mal">
                 </a>
             </figure>
-            <figure class="elementoDiscoSpotify">
+            <figure class="elementoDiscoSpotify opacidadElementos">
                 <iframe src="https://open.spotify.com/embed/album/1Ege2vnYYSEgKQ9zJ3YRAS" width="250" height="300"
                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </figure>

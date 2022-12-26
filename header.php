@@ -18,7 +18,7 @@
                 <a href=participaciones.php>PARTICIPACIONES</a>
             </li>
             <li class="menuItems">
-                <a href=vivo.php>VIVO</a>
+                <a href=shows.php>SHOWS</a>
             </li>
             <li class="menuItems">
                 <a href=bio.php>BIO</a>

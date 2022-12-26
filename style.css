@@ -21,27 +21,27 @@ html{
 
 @font-face {
     font-family: 'FuturaBDCN';
-    src: url("../C-Munteanu-php/fonts/FuturaBoldCondensedBT.ttf");
+    src: url('fonts/FuturaBoldCondensedBT.ttf');
   }
 
 @font-face {
     font-family: 'FuturaMDCN';
-    src: url("../C-Munteanu-php/fonts/FuturaMediumCondensedBT.ttf");
+    src: url('fonts/FuturaMediumCondensedBT.ttf');
   }
 
 @font-face {
     font-family: 'FuturaLTCN';
-    src: url("../C-Munteanu-php/fonts/FuturaLightCondensedBT.ttf");
+    src: url('fonts/FuturaLightCondensedBT.ttf');
 }
 
 @font-face {
     font-family: 'Dekar';
-    src: url("../C-Munteanu-php/fonts/Dekar.otf");
+    src: url('fonts/Dekar.otf');
   }
 
 /*Fuente para que reconozca el widget de Songkick*/
 
-section.vivo{
+section.shows{
     font-family: 'Roboto', 'FuturaLTCN', 'Arial', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -70,9 +70,6 @@ h1.titulosSecciones{
     margin: 20px;
     padding: 10px 40px 10px 10px;
     left:0%;
-    /*animation-name: animacionTitulos;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;*/
 }
 
 body{
@@ -81,47 +78,56 @@ body{
     min-height: 100vh;
 }
 
+.opacidadElementos{
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+
+.opacidadElementos:hover{
+    opacity: 1;
+}
+
 /*Imágenes de fondo*/
 
 body#bodyInicio{
     height: 100%;
-    background: url("../C-Munteanu-php/img/fondo_inicio_2.jpg") no-repeat center fixed;     
+    background: url('img/02-musica.jpg') no-repeat center fixed;     
     background-size: cover;
 }
 
 body#bodyMusica{
     height: 100%;
-    background: url("../C-Munteanu-php/img/fondo_musica.jpg") no-repeat center fixed;     
+    background: url('img/02-musica-blur.jpg') no-repeat center fixed;     
     background-size: cover;
 }
 
 body#bodyVideos{
     height: 100%;
-    background: url("../C-Munteanu-php/img/fondo_videos.jpg") no-repeat center fixed;     
+    background: url('img/03-videos-blur.jpg') no-repeat center fixed;     
     background-size: cover;
 }
 
 body#bodyParticipaciones{
     height: 100%;
-    background: url('../C-Munteanu-php/img/fondo_participaciones.jpg') no-repeat center fixed;     
+    background: url('img/04-participaciones-blur.jpg') no-repeat center fixed;     
     background-size: cover;
 }
 
-body#bodyVivo{
+body#bodyShows{
     height: 100%;
-    background: url("../C-Munteanu-php/img/fondo_vivo.jpg") no-repeat center fixed;     
+    background: url('img/05-shows-blur.jpg') no-repeat center fixed;     
     background-size: cover;
 }
 
 body#bodyBio{
     height: 100%;
-    background: url("../C-Munteanu-php/img/fondo_bio.jpg") no-repeat center fixed;     
+    background: url('img/06-bio-blur.jpg') no-repeat center fixed;     
     background-size: cover;
 }
 
 body#bodyContacto{
     height: 100%;
-    background: url("../C-Munteanu-php/img/fondo_contacto.jpg") no-repeat center fixed;     
+    background: url('img/07-contacto-blur.jpg') no-repeat center fixed;     
     background-size: cover;
 }
 
@@ -143,18 +149,17 @@ footer{
 }
 
 .iconosFooter{
+    font-size: 17px;
     margin: 10px;
     padding: 10px;
+    transition: font-size 0.25s;
 }
 
-/*Estilos nav*/
+.iconosFooter:hover{
+    font-size: 25px;
+}
 
-/*header{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
+/*Estilos header*/
 
 header{
     position: relative;
@@ -214,16 +219,16 @@ script.songkick-widget{
     font-family: 'Roboto', 'FuturaLTCN', 'Arial', sans-serif;
 }
 
-/*Sección "Música" y un poco de "Participaciones"*/
+/*Sección "Música" y parte de "Participaciones"*/
 
-.discos{
+#discosCatalin{
     height: 70vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 5vh;
+    padding: 0 0 10vh;
 }
 
 figure.elementoDiscoTapa{
@@ -246,6 +251,12 @@ article.cadaDisco{
     align-items: center;
 }
 
+article#lanzamientoDestacado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /*Sección "Index"*/
 
 #mainIndex{
@@ -256,14 +267,6 @@ article.cadaDisco{
 }
 
 /*Sección "Bio"*/
-
-h2#tituloBio{
-    text-align: left;
-    width: 50%;
-}
-
-/*para poner un "espejo" del titulo
-    transform: rotateY(180deg);*/
 
 p{
     font-family: 'Roboto', 'FuturaLTCN', 'Arial', sans-serif;
@@ -276,83 +279,22 @@ p{
     overflow: auto;
 }
 
-article#textoBioUno{
-    position: absolute;
-    width: 50%;
-    left: 0;
-    padding-bottom: 5vh;
+article#textoBio{
+    opacity: 1;
+    transition: background-color 1s;
+    margin: 2em;
+    padding: 1em;
 }
 
-article#textoBioDos{
-    position: absolute;
-    width: 50%;
-    right: 0;
-    padding-bottom: 5vh;
+article#textoBio:hover{
+    background-color: rgba(0,0,0,0.70)
 }
 
-p#circuloUno{
-    width: 57%;
-    text-align: left;
-    padding-left: 3%;
+section.bio{
+    margin-bottom: 50vh;
 }
-
-p#circuloUnoYMedio{
-    width: 38%;
-    text-align: left;
-    padding-left: 3%;
-}
-
-p#circuloDos{
-    width: 29%;
-    text-align: left;
-    padding-left: 3%;
-    overflow: hidden;
-}
-
-p#circuloTres{
-    padding-left: 28%;
-    padding-right: 3%;
-    text-align: right;
-}
-
-p#circuloCuatro{
-    padding-left: 25%;
-    padding-right: 3%;
-    text-align: right;
-}
-
-p#circuloCinco{
-    padding-left: 32%;
-    padding-right: 3%;
-    text-align: right;
-}
-
-p#circuloSeis{
-    padding-left: 32%;
-    padding-right: 3%;
-    text-align: right; 
-}
-
-/*article#textoCompletoBio{
-    margin: 2vh 15vw;
-    padding: 2vh 2vw;
-    background-color: rgba(0,0,0,0.40);
-}*/
-
-/*
-#bio{
-    color: #FFFFFF;
-    text-shadow: 0 0 8px #d9ff00, 0 0 2px #d9ff00, 0 0 10px #d9ff00, 0 0 6px #d9ff00, 0 0 20px #d9ff00, 0 0 20px #d9ff00;
-}*/
 
 /*Sección "Videos"*/
-
-/*section#videos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    overflow: auto;
-}*/
 
 article#videoDestacado{
     margin: 2vh 0;
@@ -481,79 +423,7 @@ h2{
     z-index: 2;
 }
 
-@media (max-width: 768px){
-
-    article#textoBioUno{
-        position: static;
-        width: 100%;
-        padding: 1em;
-        padding-bottom: 0;
-        background-color: rgba(0,0,0,0.50);
-    }
-    
-    article#textoBioDos{
-        position: static;
-        width: 100%;
-        padding: 1em;
-        padding-top: 0;
-        padding-bottom: 10vh;
-        background-color: rgba(0,0,0,0.50);
-    }
-    
-    p#circuloUno{
-        width: 100%;
-        margin: 0;
-        padding: 0.25em;
-        padding-bottom: 1em;
-        text-align: center;
-    }
-    
-    p#circuloUnoYMedio{
-        width: 100%;
-        margin: 0;
-        padding: 0.25em;
-        padding-bottom: 1em;
-        text-align: center;
-    }
-    
-    p#circuloDos{
-        width: 100%;
-        margin: 0;
-        padding: 0.25em;
-        padding-bottom: 1em;
-        text-align: center;
-    }
-    
-    p#circuloTres{
-        width: 100%;
-        margin: 0;
-        padding: 0.25em;
-        padding-bottom: 1em;
-        text-align: center;
-    }
-    
-    p#circuloCuatro{
-        width: 100%;
-        margin: 0;
-        padding: 0.25em;
-        padding-bottom: 1em;
-        text-align: center;
-    }
-    
-    p#circuloCinco{
-        width: 100%;
-        margin: 0;
-        padding: 0.25em;
-        padding-bottom: 1em;
-        text-align: center;
-    }
-    
-    p#circuloSeis{
-        width: 100%;
-        margin: 0;
-        padding: 0.25em;
-        text-align: center; 
-    }
+@media (max-width: 768px){   
 
     .discos{
         flex-direction: column;
@@ -568,6 +438,11 @@ h2{
     }
 
     article.cadaDisco{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    article#lanzamientoDestacado{
         flex-direction: column;
         justify-content: center;
     }
@@ -588,14 +463,24 @@ h2{
 
     header{
         background: transparent;
+        justify-content: flex-end;
+    }
+
+    footer{
+        height: 10vh;
+    }
+
+    nav ul li{
+        margin: 0;
+        padding: 0;
+    }
+
+    .iconosFooter{
+        font-size: 25 px;
     }
 
     ul#mainMenu{
         display: none;
-    }
-
-    header{
-        justify-content: flex-end;
     }
 
     #close-mobile-menu{
@@ -699,6 +584,10 @@ h2{
 
     a.linkDisco{
         font-size: 1px;
+    }
+
+    section.bio{
+        padding-bottom: 15vh;
     }
 }
 

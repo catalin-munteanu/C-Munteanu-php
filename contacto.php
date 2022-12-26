@@ -25,7 +25,7 @@
         if ( empty( $_GET['success'] ) ) {
         ?>
 
-        <form action="mensajes.php" method="post">
+        <form action="mensajes.php" method="post" class="opacidadElementos">
             <label for="nombre">NOMBRE</label><br>
                 <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required><br><br>
             <label for="email">E-MAIL</label><br>

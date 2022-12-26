@@ -23,43 +23,34 @@
         <section id="participacionesEnDiscos">
 
             <article class="cadaDisco">
-                <figure class="elementoDiscoTapa">
-                    <a class="linkDisco" href="https://open.spotify.com/album/2OHSWVVWZayCYkGuIms6uL">
-                        <img class="tapaDisco" src="../C-Munteanu-php/img/los_incendios_forestales.jpg" width="300" height="300"
-                        alt="Los incendios forestales">
+                <figure class="elementoDiscoTapa opacidadElementos">
+                    <a class="linkDisco" href="https://open.spotify.com/album/2OHSWVVWZayCYkGuIms6uL" target="_blank">
+                        <img class="tapaDisco" src='img/los_incendios_forestales.jpg' width="300" height="300" alt="Los incendios forestales">
                     </a>
                 </figure>
-                <figure class="elementoDiscoSpotify">
-                    <iframe src="https://open.spotify.com/embed/album/2OHSWVVWZayCYkGuIms6uL" width="250" height="300"
-                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <figure class="elementoDiscoSpotify opacidadElementos">
+                    <iframe src="https://open.spotify.com/embed/album/2OHSWVVWZayCYkGuIms6uL" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </figure>
             </article>
 
             <article class="cadaDisco">
-                <figure class="elementoDiscoTapa">
-                    <a class="linkDisco" href="https://open.spotify.com/album/05qTM0VRUdTV8Bw3yMj8K6?si=EpePyRBFRY-B5eJHpM66jA">
-                        <img class="tapaDisco" src="../C-Munteanu-php/img/fuega_camina_conmigo.jpg" width="300" height="300"
-                            alt="Fuega camina conmigo">
+                <figure class="elementoDiscoTapa opacidadElementos">
+                    <a class="linkDisco" href="https://open.spotify.com/album/05qTM0VRUdTV8Bw3yMj8K6?si=EpePyRBFRY-B5eJHpM66jA" target="_blank">
+                        <img class="tapaDisco" src='img/fuega_camina_conmigo.jpg' width="300" height="300" alt="Fuega camina conmigo">
                     </a>
                 </figure>
-                <figure class="elementoDiscoSpotify">
-                    <iframe src="https://open.spotify.com/embed/album/05qTM0VRUdTV8Bw3yMj8K6" width="250" height="300"
-                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <figure class="elementoDiscoSpotify opacidadElementos">
+                    <iframe src="https://open.spotify.com/embed/album/05qTM0VRUdTV8Bw3yMj8K6" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </figure>
             </article>
 
             <article id="participacionesBandcamp">
-                <iframe class="participacionesBandcamp"
-                    src="https://bandcamp.com/EmbeddedPlayer/album=3717669713/size=large/bgcol=333333/linkcol=4ec5ec/tracklist=false/track=692135236/transparent=true/"
-                    seamless><a href="https://batsukin.bandcamp.com/album/ciudad-de-mil-elefantes">Ciudad de mil
+                <iframe class="participacionesBandcamp opacidadElementos" src="https://bandcamp.com/EmbeddedPlayer/album=3453179859/size=large/bgcol=333333/linkcol=0687f5/tracklist=false/track=3644783874/transparent=true/" seamless><a href="https://fkrz.bandcamp.com/album/the-vacuum-catastrophe">The Vacuum Catastrophe by FKRZ</a></iframe>
+                <iframe class="participacionesBandcamp opacidadElementos" src="https://bandcamp.com/EmbeddedPlayer/album=3717669713/size=large/bgcol=333333/linkcol=4ec5ec/tracklist=false/track=692135236/transparent=true/" seamless><a href="https://batsukin.bandcamp.com/album/ciudad-de-mil-elefantes">Ciudad de mil
                         Elefantes by Batsûkin</a></iframe>
-                <iframe class="participacionesBandcamp"
-                    src="https://bandcamp.com/EmbeddedPlayer/album=2059693862/size=large/bgcol=333333/linkcol=e99708/tracklist=false/track=428596116/transparent=true/"
-                    seamless><a href="https://eugeniasasso.bandcamp.com/album/alma-sabe">Alma sabe by Eugenia
+                <iframe class="participacionesBandcamp opacidadElementos" src="https://bandcamp.com/EmbeddedPlayer/album=2059693862/size=large/bgcol=333333/linkcol=e99708/tracklist=false/track=428596116/transparent=true/" seamless><a href="https://eugeniasasso.bandcamp.com/album/alma-sabe">Alma sabe by Eugenia
                         Sasso</a></iframe>
-                <iframe class="participacionesBandcamp"
-                    src="https://bandcamp.com/EmbeddedPlayer/album=1061584651/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/transparent=true/"
-                    seamless><a href="https://elguitarrazo.bandcamp.com/album/a-granel">A granel by El
+                <iframe class="participacionesBandcamp opacidadElementos" src="https://bandcamp.com/EmbeddedPlayer/album=1061584651/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/transparent=true/" seamless><a href="https://elguitarrazo.bandcamp.com/album/a-granel">A granel by El
                         Guitarrazo</a></iframe>
             </article>
         </section>

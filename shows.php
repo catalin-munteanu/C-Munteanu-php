@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/fa4853c74e.js" crossorigin="anonymous"></script>
-    <title>En vivo | Catalín Munteanu</title>
+    <title>Shows | Catalín Munteanu</title>
     <link rel="icon" href="../C-Munteanu-php/img/astronautita.png" type="image/x-icon">
 </head>
 
-<body id="bodyVivo">
+<body id="bodyShows">
 
 <?php require_once 'header.php'; ?>
 
     <main>
-        <section class=vivo>
+        <section class=shows>
             <article id="songkick-w">
                 <a href="https://www.songkick.com/artists/9091409" class="songkick-widget" data-theme="dark" data-other-artists="on" data-track-button="on" data-detect-style="true" data-font-color="#FFFFFF" data-locale="es">Catalín Munteanu en vivo</a>
                 <script src="//widget.songkick.com/9091409/widget.js"></script>

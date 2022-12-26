@@ -44,7 +44,9 @@ if ( $nombre !== '' &&
 
             /* CONEXIÓN CON LA BASE DE DATOS */
 
-            $connection = new mysqli( 'localhost', 'root', '', 'c-munteanu-mensajes' );
+            $connection = new mysqli( '173.237.189.61', 'catalinm_campeonmundial', 'dAlEfIdEo987&', 'catalinm_mensajes' );
+            
+            $connection->set_charset('utf8');
 
             if ( $connection->connect_error ) {
                 die( 'No se ha podido establecer una conexión.' );
@@ -61,18 +63,11 @@ if ( $nombre !== '' &&
 
             $insercion = $connection->query( 'INSERT INTO mensajes(nombre, email, asunto, mensaje) VALUES
             ("' . $nombreEsc . '", "' . $emailEsc . '", "' . $asuntoEsc . '", "' . $mensajeEsc . '")');
-            
-            echo 'INSERT INTO mensajes(nombre, email, asunto, mensaje) VALUES
-            ("' . $nombreEsc . '", "' . $emailEsc . '", "' . $asuntoEsc . '", "' . $mensajeEsc . '")';
 
-            // var_dump( $asuntoEsc );
-
-            mail ( 'cmunteanumusica@gmail.com', 'Nuevo mensaje en Catalín Munteanu', 'Nuevo mensaje:' . $nombreEsc . $emailEsc . $asuntoEsc . $mensajeEsc );
+            mail( 'catalinmunteanumusica@gmail.com', "Nuevo mensaje en Catalín Munteanu", "Nuevo mensaje" . "\n\nNombre: " . $nombreEsc . "\nE-mail: " . $emailEsc . "\nAsunto: " . $asuntoEsc . "\nMensaje: " . $mensajeEsc );
         
         header( 'Location: contacto.php?success=true' );
 
 } else {
-    echo 'algo salió mal';
+    echo 'Algo salió mal.';
 }
-
-?>

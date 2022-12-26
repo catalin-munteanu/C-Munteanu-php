@@ -16,7 +16,7 @@
 
 <body id="bodyVideos">
 
-<?php require_once 'header.php'; ?>
+    <?php require_once 'header.php'; ?>
 
     <main>
 
@@ -24,29 +24,37 @@
 
         <section id="videos">
 
-            <article id="videoDestacado">
-                <iframe class="videoDestacado" width="560" height="315" src="https://www.youtube.com/embed/kzuCR0aFkew"
+            <article id="videoDestacado" class="opacidadElementos">
+                <iframe class="videoDestacado" width="560" height="315" src="https://www.youtube.com/embed/q5A_elA5N8Y"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </article>
 
             <article class="videosNoDestacados">
-                <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/kzuCR0aFkew"
+                <iframe class="otrosVideos opacidadElementos" width="360" height="315" src="https://www.youtube.com/embed/q5A_elA5N8Y"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/7_1poysP21U"
+                <iframe class="otrosVideos opacidadElementos" width="360" height="315" src="https://www.youtube.com/embed/Kd7PsWw6WUM"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/IU3B35eAGW4"
+                <iframe class="otrosVideos opacidadElementos" width="360" height="315" src="https://www.youtube.com/embed/kzuCR0aFkew"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe class="otrosVideos opacidadElementos" width="360" height="315" src="https://www.youtube.com/embed/7_1poysP21U"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe class="otrosVideos opacidadElementos" width="360" height="315" src="https://www.youtube.com/embed/IU3B35eAGW4"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </article>
-        
-        <!-- Puedo meter más contenido del canal de Youtube... ver cómo hacer para poner "más" y que me mande a todo
+
+            <!-- Puedo meter más contenido del canal de Youtube... ver cómo hacer para poner "más" y que me mande a todo
         el contenido del canal o algo así -->
 
         </section>
